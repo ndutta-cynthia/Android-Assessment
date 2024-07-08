@@ -1,3 +1,6 @@
-data class Balance(val balance:List<Balance>):{
-va
+data class Balancev){
+    var name: String,
+    var amount: Int,
+    var date: String,
+
 }
