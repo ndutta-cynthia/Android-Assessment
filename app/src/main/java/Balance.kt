@@ -1,6 +1,6 @@
-data class Balancev){
+data class Balancev(
     var name: String,
-    var amount: Int,
+    var price: Int,
     var date: String,
 
-}
+    )

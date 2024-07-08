@@ -5,19 +5,19 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 
-class AdapterBalance (val balance: List<Balance>):RecyclerView.Adapter<BalanceViewHolder>(){
+class AdapterBalance (val balance: List<Balance>):RecyclerView.Adapter<Balancev>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BalanceViewHolder {
         var itemView = LayoutInflater.from(parent.context).inflate(R.layout.contact_list_item,  parent, false)
         return ContactsViewHolder(itemView)
     }
 
     override fun getItemCount(): Int {
-        return balanceList.size
+        return balance.size
     }
 
     override fun onBindViewHolder(holder: ContactsViewHolder, position: Int) {
-        val contact= balanceList[position]
-        holder.idMoneyIn.text= contact.name
+        val contact= balance[position]
+        holder.tvName.text= contact.name
         holder.tvPhoneNumber.text= contact.phoneNUmber
         holder.tvEmail.text= contact.email
 

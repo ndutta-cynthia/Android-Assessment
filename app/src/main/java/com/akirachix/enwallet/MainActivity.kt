@@ -1,5 +1,6 @@
 package com.akirachix.enwallet
 
+import Balancev
 import android.app.Activity
 import android.os.Bundle
 import android.view.inputmethod.InputBinding
@@ -16,11 +17,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.tvBalance.layoutManager = LinearLayoutManager(this)
+        binding.tvBalance.l= LinearLayoutManager(this)
         displayMoney()
 
     }
     fun displayMoney(){
-        val display1= display( )
+        val display1= Balancev("Rent", 12000, "1 june 2024")
+        val display2= Balancev("Rent", 12000, "1 june 2024")
+        val display3= Balancev("Rent", 12000, "1 june 2024")
+        val display4= Balancev("Rent", 12000, "1 june 2024")
+
+
     }
 }
