@@ -315,10 +315,11 @@
             android:id="@+id/idDividendDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
             android:text="4 July 2024"
             app:layout_constraintBottom_toBottomOf="@+id/tvDividends"
-            app:layout_constraintTop_toBottomOf="@+id/tvRent"
-            tools:layout_editor_absoluteX="308dp" />
+            app:layout_constraintStart_toEndOf="@+id/tvDividends"
+            app:layout_constraintTop_toBottomOf="@+id/tvRent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
