@@ -17,16 +17,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.tvBalance.l= LinearLayoutManager(this)
-        displayMoney()
+//        binding.tvBalance.l= LinearLayoutManager(this)
+//        displayMoney()
 
     }
-    fun displayMoney(){
-        val display1= Balancev("Rent", 12000, "1 june 2024")
-        val display2= Balancev("Rent", 12000, "1 june 2024")
-        val display3= Balancev("Rent", 12000, "1 june 2024")
-        val display4= Balancev("Rent", 12000, "1 june 2024")
-
-
-    }
+//    fun displayMoney(){
+//        val display1= Balancev("Rent", 12000, "1 june 2024")
+//        val display2= Balancev("Rent", 12000, "1 june 2024")
+//        val display3= Balancev("Rent", 12000, "1 june 2024")
+//        val display4= Balancev("Rent", 12000, "1 june 2024")
+//
+//
+//    }
 }
